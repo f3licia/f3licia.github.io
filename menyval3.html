@@ -1,0 +1,84 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bilder/katticon.png">
+    <title>Kattsidan - Tips</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+    <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+    <div id="toppen">
+        <header>
+            <img id="vitkatt" height=98 width=160 src="bilder/tubbs.png">
+            <h1 id="over"> Kattsidan </h1>
+            <h3 id="under"> allt om katter </h3>
+        </header>
+        <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <ul class="nav navbar-nav centrering">
+                    <li><a href="index.html">start</a></li>
+                    <li><a href="menyval1.html">bobo</a></li>
+                    <li><a href="menyval2.html">kattprylar</a></li>
+                    <li><a id="tips" href="menyval3.html">tips</a></li>     
+                </ul>
+            </div>
+        </nav>
+        <h2 id="tipstext">Här tipsar jag om produkter till din katt samt skötselråd!</h2>
+        <img id="kattårta" height=325 width=480 class="displayed" src="bilder/kattårta.jpg">
+        <img id="kattårta2" height=325 width=217 class="displayed" src="bilder/kattårta2.jpg">
+        
+        <div id="tårtaover">
+            <span>
+                diy kattårta
+            </span>
+        </div>
+        <p id="tårtabesk">vill du ge din katt något riktigt gott på födelsedagen? <br> den här kattvänliga tårtan är en perfekt godbit för din fluffiga vän!</p>
+        <h4 id="ingredienser">ingredienser</h4>
+        <p id="ingr">1 burk tonfisk i vatten (häll ut vattnet)<br>1 dl tärnad kokt kyckling eller delad kyckling på burk<br>1 dl sötpotatispurée<br>1 mosad potatis</p>
+        <p id="varning"> VARNING: Se till att katten inte är där under arbetsprocessen,<br>annars kommer du inte få några ingridienser att använda</p>
+        <h4 id="tillagning">tillagning</h4>
+        <p id="tilla">- Blanda tonfisk, kyckling och sötpotatis tills det håller ihop sig ganska bra.<br>Om din sötpotatis är för fuktig, använd lite havre- eller rismjöl för att suga upp det<br>- Gör en bulle genom att skopa upp ca 3 msk av blandningen<br> och trycka den försiktigt på din arbetsyta<br>- Kyl ned bullen lite<br>- Lägg potatismoset i en plastpåse och klipp av ett litet hörn<br>- Dekorera kakan med potatis-glasyren hur du vill<br>- Ställ några katt-säkra ljus (Ansjovis) i kakan<br>- Servera kakan till födelsedagskissen! :)</p>
+        <div id="favoriter">
+            <span>
+                gamla favoriter
+            </span>
+        </div>
+        <img id="kattgodis" class="displayed" src="bilder/kattgodis.jpg">
+        <h4 id="tipslänk"><a href="https://www.zoo.se/orijen-cat-treats-orginal-kattgodis.html" target="_blank">orijen frystorkad kyckling & kalkon kattgodis [59,90kr]</a></h4>
+        <p id="tipsbesk">Detta godis är både mumsigt och nyttigt, Bobo älskar det!<br>Finns i flera olika smaker/kött, kyckling och kalkon är en av favoriterna. </p>
+        <img id="mus" class="displayed" height=450 width=450 src="bilder/mus.jpg">
+        <h4 id="tipslänk"><a href="https://www.zoo.se/produkter/katt-kattbutik-online/kattleksaker-aktivitetsleksaker-vippor/moss-mus-palsmoss-leksaksmoss-for-katter/kortharig-mus-4-pack-nobby-kattleksak-5-cm.html" target="_blank">nobby
+            kattleksak pälsmus 4-pack [29,90kr]</a></h4>
+            <p id="tipsbesk">Billiga och bra, en favorit som aldrig tröttnas på!</p>
+
+        </body>
+        </html>

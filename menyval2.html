@@ -1,0 +1,64 @@
+<!-- Tala om att det är html-dokument -->
+<!DOCTYPE html>
+
+<!-- Alla element ska finnas inom html-taggen -->
+<html>
+<!-- I head placeras saker som inte är innehåll, tex css-filer och javascript -->
+<head>
+    <!-- Dessa 3 meta-taggar måste vara först i head för att alla tecken (åäö) och Bootstrap ska fungera korrekt -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Koppla in Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Koppla in egen CSS-fil style.css OBS! Ha den som sista css-fil -->
+    <link rel="stylesheet" type ="text/css" href="css/style.css">
+
+    <!-- Koppla in och JQuery Bootstrap javascript -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Koppla in egen JavaScript-fil funktion.js OBS! Ha den som sista js-fil -->
+    <script type="text/javascript" src="js/funktion.js"></script>
+
+    <!-- I title skriver du titeln som webbläsarfönstret ska ha när den här sidan besöks-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bilder/katticon.png">
+    <title>Bobo - Kattprylar</title>
+</head>
+
+<!-- I body finns allt innehåll på hemsidan -->
+<body>
+
+    <!-- I nav finns alla länkar eller knappar för navigering, tex en menyrad -->
+    <div id="toppen">
+        <header>
+            <img id="vitkatt" height=98 width=160 src="bilder/tubbs.png">
+            <h1 id="over"> Kattsidan </h1>
+            <h3 id="under"> allt om katter </h3>
+        </header>
+        <nav class="nav navbar-inverse navbar-static-top">
+            <div class="container">
+                <ul class="nav navbar-nav centrering">
+                    <li><a href="index.html">start</a></li>
+                    <li><a href="menyval1.html">bobo</a></li>
+                    <li><a id="kattprylar" href="menyval2.html">kattprylar</a></li>
+                    <li><a href="menyval3.html">tips</a></li>  
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <h2>Här är några kattiga prylar jag hittat:</h2>
+    <img id="prylbild"  class="displayed" src="bilder/skal.jpg">
+    <h4><a href="https://www.fallindesign.com/romane-monomate-cute-cat-iphone-6-jelly-case/" target="_blank">gulligt siliconskal för iphone 6 [339kr] </a> </h4>
+    <img id="prylbild" class="displayed" height=400 width=400 src="bilder/pennskrin.jpg">
+    <h4><a href="https://www.aliexpress.com/item/Cute-Black-Mr-Cat-Plush-Square-Girls-Pencil-Bag-Case-Stationery18-9-3cm-New-Free-Shipping/32379687960.html" target="_blank">mjukt, svart pennskrin [34kr] </a> </h4>
+    <img id="prylbild" class="displayed" height=337 width=397 src="bilder/kuddar.jpg">
+    <h4><a href="https://www.aliexpress.com/item/Anime-Cute-Neko-Atsume-Cat-Backyard-Cat-Meow-Plush-Pillow-2-Colors-Gray-Orange-Cat-Pillow/32705286283.html?spm=2114.search0301.4.1.EKVEx4" target="_blank">supersöta kattkuddar som värmer upp ditt rum [109,56kr] </a> </h4>
+</body>
+</html>
